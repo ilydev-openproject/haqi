@@ -30,7 +30,7 @@ class Pesanan extends Model implements HasMedia
 
     public function toko()
     {
-        return $this->belongsTo(toko::class, 'toko_id');
+        return $this->belongsTo(Toko::class, 'toko_id');
     }
 
     public function project()
